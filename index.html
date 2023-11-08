@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Facebook - log in or sign up</title>
+    <link rel="icon" type="image/x-icon" href="./Icons/2021_Facebook_icon.svg.webp">
+    <style>
+      body{
+        background-color: #f0f2f5;
+        margin: 0;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+      }
+
+      .main-container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .left-header {
+        /* border: 1px solid lightgray; */
+        width: 500px;
+        height: 250px;
+        margin: 0;
+        margin-right: 100px;
+      }
+
+      .fb-logo {
+        height: 105px;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: 100;
+        padding-left: 30px;
+        margin-top: -8px;
+      }
+
+      .right-header {
+        background-color: white;
+        height: 310px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 18px lightgray;
+      }
+
+      .log-in-sign-up {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      .log-in-sign-up input {
+        height: 50px;
+        width: 350px;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        margin-bottom: 12px;
+      }
+
+      .log-in-sign-up input:focus {
+        outline: none;
+        border: 0.5px solid #1877f2;
+        box-shadow: 0.5px 0.5px 4px #8fbbf5;
+      }
+
+      .log-in-btn {
+        height: 50px;
+        color: white;
+        background-color: #1877f2;
+        border: none;
+        border-radius: 6px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      .log-in-sign-up div a {
+        color:  #1877f2;
+        cursor: pointer;
+      }
+
+      .log-in-sign-up div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 10px;
+      }
+
+      .break {
+        border-bottom: 1px solid lightgray;
+        width: 350px;
+        height: 10px;
+        margin-bottom: 12px;
+      }
+
+      .create-acct-btn {
+        background-color: #42b72a;
+        color: white;
+        font-size: 17px;
+        font-weight: 600;
+        border: none;
+        height: 50px;
+        border-radius: 6px;
+        width: 180px;
+        cursor: pointer;
+      }
+
+      .bold-pointer {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .bold-pointer:hover {
+        text-decoration: underline;
+      }
+
+      .right-header div p {
+        font-size: 14px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="main-container">
+      <div class="left-header">
+        <img class="fb-logo" src="./Icons/fb-logo.svg">
+        <h2>Connect with friends and the world around you on Facebook.</h2>
+      </div>
+      <!-- main container for right side -->
+      <div class="right-header">
+        <div class="log-in-sign-up">
+          <input type="text" placeholder="Email or phone number">
+          <input type="text" placeholder="Password">
+          <button class="log-in-btn">Log In</button>
+          <div><a>Forgot password?</a></div>
+          <div class="break"></div>
+          <div>
+            <button class="create-acct-btn">Create new account</button>
+          </div>
+        </div>
+        <div>
+          <p> 
+             <span class="bold-pointer">Create a Page</span> for a celebrity, brand or business.
+          </p>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>
